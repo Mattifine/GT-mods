@@ -1,0 +1,101 @@
+#define _ARMA_
+
+class StageTI
+{
+	//texture="a3_dgr_equipment\data\dgr_vest_ti_ca.paa";
+	texture = "a3\characters_f_beta\indep\data\equip_ia_vest01_ti_ca.paa";
+};
+ambient[]={1,1,1,1};			// what is not lit by directional light
+diffuse[]={1,1,1,1};		// what is lit by directional light era 0.7,0.7,0.7,1
+forcedDiffuse[]={0,0,0,1};		// era forcedDiffuse[]={0,0,0,1};
+emmisive[]={1,1,1,1};
+specular[]={0.02,0.02,0.02,1};		// specular[]={0,0,0,1}; 0.02,0.02,0.02,1
+specularPower=1;			// era 16
+PixelShaderID="Super";
+VertexShaderID="Super";
+class Stage1
+{
+	texture="a3_dgr_equipment\data\dgr_vest_nohq.paa";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
+	};
+};
+class Stage2
+{
+	texture="#(argb,8,8,3)color(0.5,0.5,0.5,1,DT)";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
+	};
+};
+class Stage3
+{
+	texture="#(argb,8,8,3)color(0.5,0.5,0.5,0,MC)";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
+	};
+};
+class Stage4
+{
+	texture="a3_dgr_equipment\data\dgr_vest_as.paa";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
+	};
+};
+class Stage5
+{
+	texture="a3_dgr_equipment\data\dgr_vest_smdi.paa";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
+	};
+};
+class Stage6
+{
+	texture="#(ai,64,64,1)fresnel(1.32,0.94)";  // texture="#(ai,32,128,1)fresnel(4.05,0.1)"; // original texture="#(ai,64,64,1)fresnel(1,0.7)";
+	uvSource="none";
+	Filter="Linear";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
+	};
+};
+class Stage7
+{
+	texture="a3\data_f\env_co.paa";
+	useWorldEnvMap = "true";
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
+	};
+};
