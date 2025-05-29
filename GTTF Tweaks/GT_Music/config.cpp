@@ -16,10 +16,11 @@ class CfgMusic
 {
 	tracks[]=	{SevenNationArmy, Astronaut, Werenotgonnatakeit, LondonCalling, HotStuff, 
 				Kickstartmyheart, VARTJAGMIGIVARLDENVANDER, genomeldochvatten , Lifeisahighway, 
-				Americanride, Detvarengångenfågel, Dontstopmenow, Whistle,LoveMeAgain, RIDMIGSOMENDALAHAST,
+				Americanride, Detvarengangenfagel, Dontstopmenow, Whistle,LoveMeAgain, RIDMIGSOMENDALAHAST,
 				RocketFuel, CantHoldUs, Kombat, IminChechnya, WishMeLuck, PackOfCigarettes, RedAlert};
 	#include "Mattifine.hpp"
 	#include "Oliva.hpp"
+	#include "K9.hpp"
 };
 class CfgMusicClasses
 {
@@ -30,5 +31,9 @@ class CfgMusicClasses
 	class Olivia
 	{
 		displayName = "GT- Olivia";
+	};
+	class K9
+	{
+		displayName = "GT- K9";
 	};
 };
